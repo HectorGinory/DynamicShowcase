@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="store-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            <p>Manzana</p>
+        </div>
+        <div class="article" draggable="true" ondragstart="drag(event)" id="drag2">
+            <p>Plátano</p>
+        </div>
+        <div class="article" draggable="true" ondragstart="drag(event)" id="drag3">
+            <p>Cereza</p>
+        </div>
+        <div class="article" draggable="true" ondragstart="drag(event)" id="drag4">
+            <p>Fresa</p>
+        </div>
+        <div class="article" draggable="true" ondragstart="drag(event)" id="drag5">
+            <p>Melón</p>
+        </div>
+    </div>
+
+    <div class="store-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
+    
+    </div>
+
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+        </body>
+</html>
