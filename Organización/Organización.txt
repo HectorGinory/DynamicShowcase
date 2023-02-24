@@ -2,11 +2,11 @@
 
 - Mostrar los productos de la tienda de forma ordenada
     - Mostrar imagen del artículo
-    - Mostrar precio del artículo
-    - Mostrar nombre del artículo
+    - Mostrar precio del artículo X
+    - Mostrar nombre del artículo X
 
     Funcionalidad:
-        - Drag
+        - Drag/Drop X
         - Añadir número de articulos
 
 -  Mostrar el carrito de la compra

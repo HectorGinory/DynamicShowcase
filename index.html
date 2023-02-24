@@ -8,41 +8,39 @@
     <title>DynamicShowcase</title>
 </head>
 <body>
-    <div class="store-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            <p>Manzana</p>
+    <div class="store-container" >
+        <div class="articles-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="article" draggable="true" ondragstart="drag(event)" id="article-01">
+                <img src="sources/fruit-juice-orange-svgrepo-com.svg" alt="foto del artículo">
+                <div class="label">
+                    <p>Melón</p>
+                    <p>Precio: <span class="value">3.00</span>€</p>
+                    <div class="amount-container">
+                        <button class="add-btn">+</button>
+                        <span class="amount">0</span>
+                        <button class="subtract-btn">-</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag2">
-            <p>Plátano</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag3">
-            <p>Cereza</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag4">
-            <p>Fresa</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag5">
-            <p>Melón</p>
-        </div>
-    </div>
-    <div class="store-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
-    
-    </div>
 
-    <script>
-        function allowDrop(ev) {
-          ev.preventDefault();
-        }
-        
-        function drag(ev) {
-          ev.dataTransfer.setData("text", ev.target.id);
-        }
-        
-        function drop(ev) {
-          ev.preventDefault();
-          var data = ev.dataTransfer.getData("text");
-          ev.target.appendChild(document.getElementById(data));
-        }
-        </script>
-        </body>
+        <div class="shoppingcar-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
+            <div class="shoppinglist" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="article" draggable="true" ondragstart="drag(event)" id="article-01">
+                    <img src="sources/fruit-juice-orange-svgrepo-com.svg" alt="foto del artículo">
+                    <div class="label">
+                        <p>Melón</p>
+                        <p>Precio: <span class="value">3.00</span>€</p>
+                        <div class="amount-container">
+                            <button class="add-btn">+</button>
+                            <span class="amount">0</span>
+                            <button class="subtract-btn">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
