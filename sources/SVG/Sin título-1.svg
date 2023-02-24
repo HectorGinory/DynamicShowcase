@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+	 viewBox="0 0 1089.6 800" style="enable-background:new 0 0 1089.6 800;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;fill:#67C5D3;}
@@ -12,22 +12,22 @@
 	.st6{display:inline;fill:#9EADBC;stroke:#477FAE;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g id="Capa_4" class="st0">
-	<rect class="st1" width="1920" height="1080"/>
+	<rect x="-50.4" y="-200" class="st1" width="1920" height="1080"/>
 </g>
 <g id="Capa_2">
 	<g id="Capa_3">
-		<rect x="152.1" y="283.1" class="st2" width="870.3" height="544.7"/>
+		<rect x="101.7" y="83.1" class="st2" width="870.3" height="544.7"/>
 	</g>
-	<rect x="140" y="300" class="st3" width="60" height="613.9"/>
-	<rect x="1000" y="300" class="st3" width="60" height="613.9"/>
-	<rect x="100" y="800" class="st4" width="1000" height="200"/>
-	<polygon class="st5" points="60,340 1140,340 1100,200 100,200 	"/>
+	<rect x="89.6" y="100" class="st3" width="60" height="613.9"/>
+	<rect x="949.6" y="100" class="st3" width="60" height="613.9"/>
+	<rect x="49.6" y="600" class="st4" width="1000" height="200"/>
+	<polygon class="st5" points="9.6,140 1089.6,140 1049.6,0 49.6,0 	"/>
 	
-		<rect x="595.4" y="235.4" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1265.4348 44.5652)" class="st3" width="30" height="839.1"/>
+		<rect x="545" y="35.4" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1015.0435 -105.0435)" class="st3" width="30" height="839.1"/>
 	
-		<rect x="574.6" y="59.4" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1068.5652 -110.5652)" class="st3" width="30" height="839.1"/>
+		<rect x="524.2" y="-140.6" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 818.1739 -260.1739)" class="st3" width="30" height="839.1"/>
 </g>
 <g id="Capa_1" class="st0">
-	<rect y="1000" class="st6" width="1920" height="80"/>
+	<rect x="-50.4" y="800" class="st6" width="1920" height="80"/>
 </g>
 </svg>
