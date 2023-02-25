@@ -1,22 +1,159 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap');
+
+::-webkit-scrollbar {
+    height: 70%;
+    background: rgba(0, 0, 0, 0.137);
+    width: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 236, 173, 0.514);
+    border-radius: 50px;
+    width: 10px;
+    transition: .2s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 236, 173, 0.877);
+  }/*# sourceMappingURL=generalStyles.css.map */
+
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif; 
 }
 
 .store-container {
     width: 100vw;
     height: 100vh;
-    background: cadetblue;
+    background: rgb(232, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.store-container .shoppingcar-container {
+    width: 300px;
+    height: 80%;
+    position: absolute;
+    left: 50px;
+    display: flex;
+    padding: 20px 20px;
+    flex-direction: column;
+    background: linear-gradient(to top,rgb(124, 72, 42), rgb(151, 84, 40));
+    border-radius: 20px;
+    border: 10px solid rgb(189, 117, 76);
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    z-index: 10;
+}
+
+.store-container::after {
+    content: '';
+    width: 390px;
+    height: 50%;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    background: rgb(255, 0, 0);
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.411);
+    border-radius: 20px;
+    z-index: auto;
+}
+
+.store-container .shoppingcar-container::after{
+    content: '';
+    width: 10px;
+    height: 60px;
+    background: rgb(34, 34, 36);
+    left: -20px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
+}
+
+.store-container .shoppingcar-container::before{
+    content: '';
+    width: 10px;
+    height: 60px;
+    background: rgb(34, 34, 36);
+    right: -20px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: inset -2px 2px 5px rgba(255, 255, 255, 0.411);
+}
+.store-container .shoppingcar-container .shoppinglist {
+    width: 90%;
+    height: 75%;
+    background: rgba(226, 173, 123, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+}
+.store-container .shoppingcar-container .shoppingcar {
+    width: 90%;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+}
+
+.store-container .shoppingcar-container .shoppingcar p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.store-container .totalprc-container {
+    width: 90%;
+    height: 10%;
+    border-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(226, 173, 123, 0.26);
+    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+}
+.store-container .totalprc-container p {
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+}
+.store-container .totalprc-container .totalprc {
+    font-weight: 400;
+    margin-left: 30px;
+}
+.store-container .article-container {
+    width: 800px;
+    height: calc(100% - 50px);
+    margin-right: 50px;
+    background: linear-gradient(to top,rgb(112, 62, 32), rgb(151, 84, 40));
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0px;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    overflow: auto;
 }
 
 .store-container .article-container .article {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(to top, rgba(44, 12, 2, 0.288), rgba(26, 7, 1, 0.418));
+    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.342),
+                1px 1px 5px rgba(255, 255, 255, 0.178);
+    border: 1px solid rgba(255, 141, 11, 0.288);
 }

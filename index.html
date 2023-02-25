@@ -8,15 +8,80 @@
     <title>Dynamic Showcase</title>
 </head>
 <body>
-    <div class="store-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <div class="article-container">
+    <div class="store-container" >
+        <div class="shoppingcar-container" >
+            <div class="shoppingcar">
+                <p>CARRITO</p>
+            </div>
+            <div class="shoppinglist" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
+
+            </div>
+
+            <div class="totalprc-container">
+                <p>Precio total:</p>
+                <p class="totalprc" id="totalprc"></p>
+                <p>€</p>
+            </div>
+
+        </div>
+
+        <div class="article-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
             <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-                <img src="sources/fruit-juice-orange-svgrepo-com.svg" width="80px"/>
+                <div class="img">
+                    <img src="sources/fruit-juice-orange-svgrepo-com.svg" width="60px">
+                </div>
+                <div class="label">
+                    <p>Sandía</p>
+                    <p>Precio <span class="value">3.21</span>€</p>
+                    <div class="amount">
+                        <button>+</button>
+                        <p>0</p>
+                        <button>-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
             </div>
         </div>
-        <div class="shoppingcar-container" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
-    
-        </div>
+
     </div>
 
 

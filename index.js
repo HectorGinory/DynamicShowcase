@@ -10,6 +10,8 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
   }
-
-
-// Shopping list function
+//Total price shown in screen
+let totalPrc = 32.96;
+let totalPrcHtml = document.getElementById('totalprc');
+let totalPrcContain = document.createTextNode(totalPrc)
+totalPrcHtml.appendChild(totalPrcContain);
