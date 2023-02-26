@@ -75,7 +75,7 @@ function substractAmount(key) {
 console.log(shop)
 // Remove function
 function removeArticle(key) {
-  let articleRemoved = document.getElementById(0);
+  let articleRemoved = document.getElementById(key);
   shop.removeChild(articleRemoved)
   display.appendChild(articleRemoved)
   addArticle()
