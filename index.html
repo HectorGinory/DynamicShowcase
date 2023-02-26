@@ -13,7 +13,7 @@
             <div class="shoppingcar">
                 <p>CARRITO</p>
             </div>
-            <div class="shoppinglist" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
+            <div class="shoppinglist" ondrop="drop(event)" ondragover="allowDrop(event)" id="shoppingList">
 
             </div>
 
@@ -26,59 +26,41 @@
         </div>
 
         <div class="article-container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag-watermelon">
                 <div class="img">
-                    <img src="sources/fruit-juice-orange-svgrepo-com.svg" width="60px">
+                    <img src="sources/SVG/sandia.svg" width="60px" class="article-img">
                 </div>
                 <div class="label">
-                    <p>Sandía</p>
-                    <p>Precio <span class="value">3.21</span>€</p>
-                    <div class="amount">
-                        <button>+</button>
-                        <p>0</p>
+                    <div class="name"><p>Sandía</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">3.21</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount(0)">+</button>
+                        <p class="amount">1</p>
                         <button>-</button>
                     </div>
                 </div>
             </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-            <div class="article" draggable="true" ondragstart="drag(event)" id="drag1">
+            <div class="article" draggable="true" ondragstart="drag(event)" id="drag-watermeln">
+                <div class="img">
+                    <img src="sources/SVG/sandia.svg" width="60px" class="article-img">
+                </div>
+                <div class="label">
+                    <div class="name"><p>Sandía</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">3.26</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('drag-watermelon')">+</button>
+                        <p class="amount">4</p>
+                        <button onclick="substractAmount(1)">-</button>
+                    </div>
+                </div>
             </div>
         </div>
 
