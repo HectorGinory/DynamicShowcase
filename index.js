@@ -1,3 +1,6 @@
+// I declare general variables
+let display = document.getElementById('article-container')
+
 // Drag and Drop Functions
 function allowDrop(ev) {
     ev.preventDefault();
@@ -27,7 +30,7 @@ function addArticle() {
   for (let i = 0; i < articleList.length ;i++ ) {
     let priceAdd = Number(articleList[i].getElementsByClassName('total-prc')[0].innerHTML);
     let add = priceAdd + buyPrice;
-    buyPrice = add;
+    buyPrice = Math.round(add * 100)/100;
   }
   let totalPrcContain = document.createTextNode(buyPrice)
   totalPrcHtml.appendChild(totalPrcContain);
@@ -46,29 +49,38 @@ function totalPrcArticle() {
      let amount = Number(amountArray[i].innerHTML);
      let price = Number(actualPrice[i].innerHTML)
      let labelPrc = String(amount * price);
-     totalPrice[i].innerHTML = Math.round(labelPrc, -4);
+     totalPrice[i].innerHTML = Math.round(labelPrc * 100)/100;
     }
    })
 }
-totalPrcArticle()
 
-// Amount add and substract
-
-console.log(articleArr[0])
-function addAmount(index) {
-  temporalAmount = Number(articleArr[0][index].getElementsByClassName('amount')[0].innerHTML)
+// Amount add and substract 
+function addAmount(key) {
+  temporalAmount = Number(document.getElementById(key).getElementsByClassName('amount')[0].innerHTML);
   temporalAmount ++
-  articleArr[0][index].getElementsByClassName('amount')[0].innerHTML = temporalAmount
+  document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = temporalAmount
   totalPrcArticle()
   addArticle()
 }
 
-function substractAmount(index) {
-  temporalAmount = Number(articleArr[0][index].getElementsByClassName('amount')[0].innerHTML)
+function substractAmount(key) {
+  temporalAmount = Number(document.getElementById(key).getElementsByClassName('amount')[0].innerHTML)
   if (temporalAmount > 1) {
     temporalAmount --
   } 
-  articleArr[0][index].getElementsByClassName('amount')[0].innerHTML = temporalAmount
+  document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = temporalAmount
   totalPrcArticle()
   addArticle()
 }
+console.log(shop)
+// Remove function
+function removeArticle(key) {
+  let articleRemoved = document.getElementById(0);
+  shop.removeChild(articleRemoved)
+  display.appendChild(articleRemoved)
+  addArticle()
+  document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = 1
+}
+
+addArticle()
+totalPrcArticle()
