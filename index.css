@@ -47,16 +47,10 @@
     display: flex;
     padding: 20px 20px;
     flex-direction: column;
-<<<<<<< HEAD
     background: linear-gradient(to top,rgb(110, 64, 37), rgb(145, 79, 35));
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.342);
     border-radius: 20px;
     border: 10px solid rgb(104, 53, 23);
-=======
-    background: linear-gradient(to top,rgb(124, 72, 42), rgb(151, 84, 40));
-    border-radius: 20px;
-    border: 10px solid rgb(189, 117, 76);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
     justify-content: center;
     align-items: center;
     gap: 5%;
@@ -70,11 +64,7 @@
     top: 20px;
     left: 35px;
     background: rgb(255, 0, 0);
-<<<<<<< HEAD
     box-shadow: inset 4px 4px 6px rgba(255, 255, 255, 0.411);
-=======
-    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.411);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
     border-radius: 20px;
     z-index: 1;
 }
@@ -88,11 +78,7 @@
     position: absolute;
     bottom: 10px;
     border-radius: 5px 0px 0px 5px;
-<<<<<<< HEAD
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.226);
-=======
-    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 
 .store-container .shoppingcar-container::before{
@@ -104,17 +90,12 @@
     position: absolute;
     bottom: 10px;
     border-radius: 0px 5px 5px 0px;
-<<<<<<< HEAD
     box-shadow: inset -2px 2px 3px rgba(255, 255, 255, 0.226);
-=======
-    box-shadow: inset -2px 2px 5px rgba(255, 255, 255, 0.411);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 
 .store-container .shoppingcar-container .shoppinglist {
     width: 90%;
     height: 75%;
-<<<<<<< HEAD
     border: 2px solid rgba(112, 5, 5, 0.281);
     display: flex;
     flex-direction: column;
@@ -123,14 +104,6 @@
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
     overflow: auto;
-=======
-    background: rgba(226, 173, 123, 0.26);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
-                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 .store-container .shoppingcar-container .shoppinglist .article {
     width: 100%;
@@ -141,10 +114,6 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.253);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 .store-container .shoppingcar-container .shoppinglist .article .img {
     width: 30%;
     height: 100%;
@@ -265,7 +234,6 @@
 
 .store-container .shoppingcar-container .shoppingcar {
     width: 90%;
-<<<<<<< HEAD
     height: 40px;
     display: flex;
     align-items: center;
@@ -274,14 +242,6 @@
     background: rgba(226, 173, 123, 0.26);
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
-=======
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
-                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 
 .store-container .shoppingcar-container .shoppingcar p {
@@ -296,16 +256,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     border-radius: 10px;
     background: rgba(226, 173, 123, 0.26);
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
-=======
-    background: rgba(226, 173, 123, 0.26);
-    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
-                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 .store-container .totalprc-container p {
     font-size: 22px;
@@ -343,36 +297,25 @@
     border: 1px solid rgba(255, 141, 11, 0.288);
     display: flex;
     z-index: 2;
-<<<<<<< HEAD
     border-radius: 10px;
     overflow: hidden;
 }
 
 .store-container .article-container .article .img {
     width: 50%;
-=======
-}
-
-.store-container .article-container .article .img {
-    width: 60%;
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(29, 187, 250, 0.13);
-<<<<<<< HEAD
     overflow: hidden;
     box-shadow: inset 0px 0px 1px rgb(201, 211, 212),
                 inset 0px 0px 6px rgba(47, 131, 170, 0.336);
-=======
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
 }
 
 .store-container .article-container .article .img img {
     width: 60px;
     height: 60px;
 }
-<<<<<<< HEAD
 
 .store-container .article-container .article .label {
     width: 50%;
@@ -380,14 +323,6 @@
     box-shadow: -3px -0px 0px rgb(216, 222, 223),
                 inset 0px 0px 1px rgb(201, 211, 212),
                 inset 0px 0px 6px rgba(47, 131, 170, 0.336);
-=======
-.store-container .article-container .article .label {
-    width: 40%;
-    height: calc(100% - 10px);
-    box-shadow: -3px -0px 0px rgb(201, 211, 212),
-                inset 0px 0px 1px rgb(201, 211, 212),
-                inset 0px 0px 6px rgba(5, 107, 155, 0.466);
->>>>>>> e9965763bc99e3ba461665773f36e007f38308d6
     display: flex;
     align-items: center;
     justify-content: center;

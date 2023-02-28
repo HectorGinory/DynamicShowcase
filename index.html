@@ -23,17 +23,313 @@
                 <p>€</p>
             </div>
         </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag2">
-            <p>Plátano</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag3">
-            <p>Cereza</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag4">
-            <p>Fresa</p>
-        </div>
-        <div class="article" draggable="true" ondragstart="drag(event)" id="drag5">
-            <p>Melón</p>
+        <div class="handlebar"></div>
+
+        <div class="article-container" id="article-container">
+            <div class="article" draggable="true" ondragstart="drag(event)" id="0">
+                <div class="img" draggable="false">
+                    <img src="sources/SVG/watermelon.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Sandía</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">2.75</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('0')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('0')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('0')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="1">
+                <div class="img">
+                    <img src="sources/SVG/strawberry.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Fresa</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.4</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('1')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('1')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('1')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id="2">
+                <div class="img">
+                    <img src="sources/SVG/banana.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Plátano</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.35</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('2')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('2')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('2')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='3'>
+                <div class="img">
+                    <img src="sources/SVG/bread.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Pan</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.30</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('3')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('3')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('3')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='4'>
+                <div class="img">
+                    <img src="sources/SVG/honey.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Miel</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">1.40</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('4')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('4')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('4')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='5'>
+                <div class="img">
+                    <img src="sources/SVG/cheese.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Queso</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">1.75</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('5')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('5')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('5')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='6'>
+                <div class="img">
+                    <img src="sources/SVG/cupcake.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Cupcake</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.65</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('6')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('6')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('6')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='7'>
+                <div class="img">
+                    <img src="sources/SVG/milk.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Leche</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.82</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('7')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('7')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('7')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='8'>
+                <div class="img">
+                    <img src="sources/SVG/eggs.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Huevo</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.34</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('8')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('8')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('8')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='9'>
+                <div class="img">
+                    <img src="sources/SVG/orange.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Naranja</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.25</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('9')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('9')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('9')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='10'>
+                <div class="img">
+                    <img src="sources/SVG/melon.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Melón</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">2.55</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('10')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('10')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('10')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='11'>
+                <div class="img">
+                    <img src="sources/SVG/tomato.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Tomate</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.40</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('11')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('11')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('11')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='12'>
+                <div class="img">
+                    <img src="sources/SVG/chicken.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Pollo</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">4.55</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('12')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('12')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('12')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='13'>
+                <div class="img">
+                    <img src="sources/SVG/pear.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Pera</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.35</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('13')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('13')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('13')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='14'>
+                <div class="img">
+                    <img src="sources/SVG/potatoes.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Papas</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">0.32</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('14')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('14')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('14')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article" draggable="true" ondragstart="drag(event)" id='15'>
+                <div class="img">
+                    <img src="sources/SVG/grapes.svg" class="article-img">
+                    <div class="img-cover"></div>
+                </div>
+                <div class="label">
+                    <div class="name"><p>Uvas</p></div>
+                    <div class="price-container">
+                        <p class="price">Precio<span style="color:rgb(255, 134, 134)" class="def-price"><b class="actual-prc">3.55</b>€</span></p>
+                        <p class="total-value">Precio final<span style="color:rgb(4, 255, 4)" class="total-price"><b class="total-prc"></b>€</span></p>
+                    </div>
+                    <div class="btn-remove"><button class="remove" onclick="removeArticle('15')">X</button></div>
+                    <div class="amount-container">
+                        <button onclick="addAmount('15')">+</button>
+                        <p class="amount">1</p>
+                        <button onclick="substractAmount('15')">-</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
