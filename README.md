@@ -8,7 +8,7 @@
 
 The challenge was to recreate a dynamic showcase. Where you can use the Drag/Drop function to add the articles to the shopping car and allways show the final price of the buy. 
 
-The design of the showcase and its products is freely so I decide to use CSS, for all the styles, except the article SVG. I use a free use SVG collection linked bellow.
+The design of the showcase and its products is freely so I decide to use CSS, for all the styles, except the article SVG. I use a free use SVG collection linked bellow. <br />
 *SVG*: https://www.svgrepo.com/collection/food-and-drinks-flat-icons-2/
 
 ### **Extra challenge**
