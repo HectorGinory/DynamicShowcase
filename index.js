@@ -1,26 +1,27 @@
 // I declare general variables
 let display = document.getElementById('article-container')
+let shop = document.getElementById('shoppingList');
+let buyPrice = 0;
 
+let articleArr = new Array();
+articleArr.push(document.getElementsByClassName('article'));
 // Drag and Drop Functions
 function allowDrop(ev) {
     ev.preventDefault();
   }
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-    addArticle();
+    totalBuy();
   }  
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-    addArticle();
+    shop.appendChild(document.getElementById(data));
+    totalBuy();
   }
 
 //Total buy price
-let shop = document.getElementById('shoppingList');
-let buyPrice = 0;
-
-function addArticle() {
+function totalBuy() {
   let totalPrcHtml = document.getElementById('totalprc');
   let articleList = shop.getElementsByClassName('article');
   totalPrcHtml.innerText = '';
@@ -32,14 +33,11 @@ function addArticle() {
     let add = priceAdd + buyPrice;
     buyPrice = Math.round(add * 100)/100;
   }
-  let totalPrcContain = document.createTextNode(buyPrice)
+  let totalPrcContain = document.createTextNode(buyPrice);
   totalPrcHtml.appendChild(totalPrcContain);
 }
 
 //Total article price shown in label
-let articleArr = new Array();
-articleArr.push(document.getElementsByClassName('article'));
-
 function totalPrcArticle() {
   articleArr.map( article => {
     let amountArray = document.getElementsByClassName('amount');
@@ -60,9 +58,8 @@ function addAmount(key) {
   temporalAmount ++
   document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = temporalAmount
   totalPrcArticle()
-  addArticle()
+  totalBuy()
 }
-
 function substractAmount(key) {
   temporalAmount = Number(document.getElementById(key).getElementsByClassName('amount')[0].innerHTML)
   if (temporalAmount > 1) {
@@ -70,17 +67,17 @@ function substractAmount(key) {
   } 
   document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = temporalAmount
   totalPrcArticle()
-  addArticle()
+  totalBuy()
 }
-console.log(shop)
+
 // Remove function
 function removeArticle(key) {
   let articleRemoved = document.getElementById(key);
   shop.removeChild(articleRemoved)
   display.appendChild(articleRemoved)
-  addArticle()
+  totalBuy()
   document.getElementById(key).getElementsByClassName('amount')[0].innerHTML = 1
 }
 
-addArticle()
-totalPrcArticle()
+totalPrcArticle();
+totalBuy();

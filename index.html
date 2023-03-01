@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="store-container" >
-        <div class="shoppingcar-container">
+        <div class="shoppingcar-container"  ondrop="drop(event)" ondragover="allowDrop(event)">
             <div class="shoppingcar">
                 <p>CARRITO</p>
             </div>
-            <div class="shoppinglist" ondrop="drop(event)" ondragover="allowDrop(event)" id="shoppingList">
+            <div class="shoppinglist" id="shoppingList">
 
             </div>
 
@@ -23,12 +23,11 @@
                 <p>€</p>
             </div>
         </div>
-        <div class="handlebar"></div>
-
+        <div class="handlebar-wheels"></div>
         <div class="article-container" id="article-container">
             <div class="article" draggable="true" ondragstart="drag(event)" id="0">
                 <div class="img">
-                    <img src="sources/SVG/watermelon.svg" class="article-img">
+                    <img src="sources/SVG/watermelon.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Sandía</p></div>
@@ -46,7 +45,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id="1">
                 <div class="img">
-                    <img src="sources/SVG/strawberry.svg" class="article-img">
+                    <img src="sources/SVG/strawberry.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Fresa</p></div>
@@ -64,7 +63,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id="2">
                 <div class="img">
-                    <img src="sources/SVG/banana.svg" class="article-img">
+                    <img src="sources/SVG/banana.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Plátano</p></div>
@@ -82,7 +81,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='3'>
                 <div class="img">
-                    <img src="sources/SVG/bread.svg" class="article-img">
+                    <img src="sources/SVG/bread.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Pan</p></div>
@@ -100,7 +99,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='4'>
                 <div class="img">
-                    <img src="sources/SVG/honey.svg" class="article-img">
+                    <img src="sources/SVG/honey.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Miel</p></div>
@@ -118,7 +117,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='5'>
                 <div class="img">
-                    <img src="sources/SVG/cheese.svg" class="article-img">
+                    <img src="sources/SVG/cheese.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Queso</p></div>
@@ -136,7 +135,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='6'>
                 <div class="img">
-                    <img src="sources/SVG/cupcake.svg" class="article-img">
+                    <img src="sources/SVG/cupcake.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Cupcake</p></div>
@@ -154,7 +153,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='7'>
                 <div class="img">
-                    <img src="sources/SVG/milk.svg" class="article-img">
+                    <img src="sources/SVG/milk.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Leche</p></div>
@@ -172,7 +171,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='8'>
                 <div class="img">
-                    <img src="sources/SVG/eggs.svg" class="article-img">
+                    <img src="sources/SVG/eggs.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Huevo</p></div>
@@ -190,7 +189,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='9'>
                 <div class="img">
-                    <img src="sources/SVG/orange.svg" class="article-img">
+                    <img src="sources/SVG/orange.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Naranja</p></div>
@@ -208,7 +207,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='10'>
                 <div class="img">
-                    <img src="sources/SVG/melon.svg" class="article-img">
+                    <img src="sources/SVG/melon.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Naranja</p></div>
@@ -226,7 +225,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='11'>
                 <div class="img">
-                    <img src="sources/SVG/tomato.svg" class="article-img">
+                    <img src="sources/SVG/tomato.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Tomate</p></div>
@@ -244,7 +243,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='12'>
                 <div class="img">
-                    <img src="sources/SVG/chicken.svg" class="article-img">
+                    <img src="sources/SVG/chicken.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Pollo</p></div>
@@ -262,7 +261,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='13'>
                 <div class="img">
-                    <img src="sources/SVG/pear.svg" class="article-img">
+                    <img src="sources/SVG/pear.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Pera</p></div>
@@ -280,7 +279,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='14'>
                 <div class="img">
-                    <img src="sources/SVG/potatoes.svg" class="article-img">
+                    <img src="sources/SVG/potatoes.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Papas</p></div>
@@ -298,7 +297,7 @@
             </div>
             <div class="article" draggable="true" ondragstart="drag(event)" id='15'>
                 <div class="img">
-                    <img src="sources/SVG/grapes.svg" class="article-img">
+                    <img src="sources/SVG/grapes.svg" class="article-img" draggable="false">
                 </div>
                 <div class="label">
                     <div class="name"><p>Uvas</p></div>

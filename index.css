@@ -30,12 +30,13 @@
 }
 
 .store-container {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background: rgb(232, 238, 238);
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    overflow: auto;
 
 }
 .store-container .shoppingcar-container {
@@ -47,16 +48,17 @@
     display: flex;
     padding: 20px 20px;
     flex-direction: column;
-    background: linear-gradient(to top,rgb(124, 72, 42), rgb(151, 84, 40));
+    background: linear-gradient(to top,rgb(145, 106, 62), rgb(176, 112, 52));
     border-radius: 20px;
-    border: 10px solid rgb(189, 117, 76);
+    border: 10px solid rgb(114, 71, 27);
     justify-content: center;
     align-items: center;
     gap: 5%;
     z-index: 10;
+    overflow: hidden;
 }
 
-.store-container .handlebar{
+.store-container .handlebar-wheels {
     width: 390px;
     height: 50%;
     position: absolute;
@@ -68,44 +70,33 @@
     z-index: 1;
 }
 
-.store-container .shoppingcar-container::after{
+.store-container .handlebar-wheels::after {
     content: '';
-    width: 10px;
+    width: 390px;
     height: 60px;
     background: rgb(34, 34, 36);
-    left: -20px;
+    left: 0px;
     position: absolute;
-    bottom: 10px;
-    border-radius: 5px 0px 0px 5px;
+    bottom: -70%;
+    border-radius: 5px;
     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
 }
-
-.store-container .shoppingcar-container::before{
-    content: '';
-    width: 10px;
-    height: 60px;
-    background: rgb(34, 34, 36);
-    right: -20px;
-    position: absolute;
-    bottom: 10px;
-    border-radius: 0px 5px 5px 0px;
-    box-shadow: inset -2px 2px 5px rgba(255, 255, 255, 0.411);
-}
-
 .store-container .shoppingcar-container .shoppinglist {
     width: 90%;
     height: 75%;
-    background: rgba(226, 173, 123, 0.26);
+    background: rgba(226, 173, 123, 0.477);
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+    overflow: auto;
+    border-radius: 5px;
 }
 .store-container .shoppingcar-container .shoppinglist .article {
     width: 100%;
     display: flex;
-    height: 70px;
+    min-height: 70px;
     background: rgba(77, 13, 5, 0.192);
     justify-content: space-between;
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
@@ -229,6 +220,19 @@
     margin-top: 2px;
 }
 
+.store-container .shoppingcar-container .shoppinglist .article .label .remove:hover::after {
+    content: 'Haga click para eliminar';
+    position: absolute;
+    width: 120px;
+    background: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    height: 15px;
+    border-radius: 10px;
+    transform: translateX(90px);
+    z-index: 0;
+}
 .store-container .shoppingcar-container .shoppingcar {
     width: 90%;
     height: 30px;
@@ -264,11 +268,10 @@
     font-weight: 400;
     margin-left: 30px;
 }
-
-
 .store-container .article-container {
     width: 800px;
-    height: calc(100% - 50px);
+    max-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     margin-right: 50px;
     background: linear-gradient(to top,rgb(112, 62, 32), rgb(151, 84, 40));
     display: flex;
@@ -277,11 +280,10 @@
     flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
-    overflow: auto;
     border-left: 15px solid rgb(90, 47, 20);
     z-index: 0;
+    overflow-y: auto;
 }
-
 .store-container .article-container .article {
     width: 200px;
     height: 120px;
@@ -383,4 +385,32 @@
     overflow: hidden;
     border: 0px solid transparent;
     position: absolute;
+}
+
+@media (max-width: 1300px) {
+    .store-container .article-container {
+        width: calc(800px/3*2);
+    }
+}
+
+@media (max-width: 1030px) {
+    .store-container .article-container {
+        width: calc(800px/3);
+    }
+}
+
+@media (max-height: 540px) {
+    .store-container .shoppingcar-container {
+        height: 70%;
+    }
+}
+
+@media (max-height: 370px) {
+    .store-container .shoppingcar-container {
+        height: 60%;
+    }
+
+    .store-container .handlebar-wheels::after {
+        bottom: -50%;
+    }
 }
