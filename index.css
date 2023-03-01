@@ -48,9 +48,16 @@
     display: flex;
     padding: 20px 20px;
     flex-direction: column;
+<<<<<<< HEAD
     background: linear-gradient(to top,rgb(145, 106, 62), rgb(176, 112, 52));
     border-radius: 20px;
     border: 10px solid rgb(114, 71, 27);
+=======
+    background: linear-gradient(to top,rgb(110, 64, 37), rgb(145, 79, 35));
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    border: 10px solid rgb(104, 53, 23);
+>>>>>>> 9b07493c683224db31d416c99b9c1bfbee725d88
     justify-content: center;
     align-items: center;
     gap: 5%;
@@ -65,7 +72,7 @@
     top: 20px;
     left: 35px;
     background: rgb(255, 0, 0);
-    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.411);
+    box-shadow: inset 4px 4px 6px rgba(255, 255, 255, 0.411);
     border-radius: 20px;
     z-index: 1;
 }
@@ -77,6 +84,7 @@
     background: rgb(34, 34, 36);
     left: 0px;
     position: absolute;
+<<<<<<< HEAD
     bottom: -70%;
     border-radius: 5px;
     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
@@ -92,6 +100,36 @@
                 inset -5px -5px 10px rgba(255, 205, 113, 0.089);
     overflow: auto;
     border-radius: 5px;
+=======
+    bottom: 10px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.226);
+}
+
+.store-container .shoppingcar-container::before{
+    content: '';
+    width: 10px;
+    height: 60px;
+    background: rgb(34, 34, 36);
+    right: -20px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: inset -2px 2px 3px rgba(255, 255, 255, 0.226);
+}
+
+.store-container .shoppingcar-container .shoppinglist {
+    width: 90%;
+    height: 75%;
+    border: 2px solid rgba(112, 5, 5, 0.281);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(226, 173, 123, 0.26);
+    box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.027);
+    overflow: auto;
+>>>>>>> 9b07493c683224db31d416c99b9c1bfbee725d88
 }
 .store-container .shoppingcar-container .shoppinglist .article {
     width: 100%;
@@ -235,12 +273,14 @@
 }
 .store-container .shoppingcar-container .shoppingcar {
     width: 90%;
-    height: 30px;
+    height: 40px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
     justify-content: center;
-    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
-                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+    background: rgba(226, 173, 123, 0.26);
+    box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
 
 .store-container .shoppingcar-container .shoppingcar p {
@@ -255,9 +295,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
     background: rgba(226, 173, 123, 0.26);
-    box-shadow: inset 5px 5px 10px rgba(70, 6, 16, 0.233),
-                inset -5px -5px 10px rgba(255, 205, 113, 0.089);
+    box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
+                inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
 .store-container .totalprc-container p {
     font-size: 22px;
@@ -293,26 +334,32 @@
     border: 1px solid rgba(255, 141, 11, 0.288);
     display: flex;
     z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .store-container .article-container .article .img {
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(29, 187, 250, 0.13);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 1px rgb(201, 211, 212),
+                inset 0px 0px 6px rgba(47, 131, 170, 0.336);
 }
 
 .store-container .article-container .article .img img {
     width: 60px;
     height: 60px;
 }
+
 .store-container .article-container .article .label {
-    width: 40%;
+    width: 50%;
     height: calc(100% - 10px);
-    box-shadow: -3px -0px 0px rgb(201, 211, 212),
+    box-shadow: -3px -0px 0px rgb(216, 222, 223),
                 inset 0px 0px 1px rgb(201, 211, 212),
-                inset 0px 0px 6px rgba(5, 107, 155, 0.466);
+                inset 0px 0px 6px rgba(47, 131, 170, 0.336);
     display: flex;
     align-items: center;
     justify-content: center;
