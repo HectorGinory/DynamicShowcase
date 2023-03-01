@@ -1,14 +1,13 @@
 /* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap');
 
+/* Scrollbar styles */
 ::-webkit-scrollbar {
     height: 70%;
     background: rgb(90, 47, 20);
     width: 15px;
     border: 5px solid rgb(90, 47, 20);
   }
-  
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgba(255, 170, 91, 0.514);
     border: 3px solid rgb(90, 47, 20);
@@ -16,19 +15,18 @@
     width: 10px;
     transition: .2s;
   }
-  
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(233, 144, 11, 0.877);
-  }/*# sourceMappingURL=generalStyles.css.map */
+  }
 
-
+/* Generals styles */
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif; 
 }
 
+/* Styles */
 .store-container {
     min-width: 100vw;
     min-height: 100vh;
@@ -37,8 +35,8 @@
     align-items: center;
     justify-content: flex-end;
     overflow: auto;
-
 }
+
 .store-container .shoppingcar-container {
     width: 300px;
     height: 80%;
@@ -57,7 +55,6 @@
     z-index: 10;
     overflow: hidden;
 }
-
 .store-container .handlebar-wheels {
     width: 390px;
     height: 50%;
@@ -69,7 +66,6 @@
     border-radius: 20px;
     z-index: 1;
 }
-
 .store-container .handlebar-wheels::after {
     content: '';
     width: 390px;
@@ -81,6 +77,7 @@
     border-radius: 5px;
     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
 }
+
 .store-container .shoppingcar-container .shoppinglist {
     width: 90%;
     height: 75%;
@@ -109,22 +106,10 @@
     align-items: center;
     justify-content: center;
 }
-
 .store-container .shoppingcar-container .shoppinglist .article .img img {
     width: 60px;
     height: 60px;
 }
-
-.store-container .shoppingcar-container .shoppinglist .article .img::after {
-    width: 120px;
-    left: 0px;
-    height: 70px;
-    content: '';
-    background: transparent;
-    position: absolute;
-}
-
-
 .store-container .shoppingcar-container .shoppinglist .article .label {
     width: 70%;
     height: calc(100%-50px);
@@ -142,7 +127,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .store-container .shoppingcar-container .shoppinglist .article .label .price-container {
     display: inline-flex;
     flex-direction: column;
@@ -178,7 +162,6 @@
     justify-content: center;
     color: white;
 }
-
 .store-container .shoppingcar-container .shoppinglist .article .label .amount-container .amount {
     height: 100%;
     background: transparent;
@@ -196,7 +179,6 @@
     height: 100%;
     width: 100%;
 }
-
 .store-container .shoppingcar-container .shoppinglist .article .label .btn-remove {
     width: 35%;
     display: flex;
@@ -219,7 +201,6 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
     margin-top: 2px;
 }
-
 .store-container .shoppingcar-container .shoppinglist .article .label .remove:hover::after {
     content: 'Haga click para eliminar';
     position: absolute;
@@ -244,13 +225,12 @@
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
-
 .store-container .shoppingcar-container .shoppingcar p {
     color: white;
     font-size: 20px;
     letter-spacing: 5px;
 }
-.store-container .totalprc-container {
+.store-container .shoppingcar-container .totalprc-container {
     width: 90%;
     height: 10%;
     border-left: 0px;
@@ -262,15 +242,16 @@
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
-.store-container .totalprc-container p {
+.store-container .shoppingcar-container .totalprc-container p {
     font-size: 22px;
     font-weight: 200;
     color: white;
 }
-.store-container .totalprc-container .totalprc {
+.store-container .shoppingcar-container .totalprc-container .totalprc {
     font-weight: 400;
     margin-left: 30px;
 }
+
 .store-container .article-container {
     width: 800px;
     max-height: calc(100vh - 50px);
@@ -299,7 +280,6 @@
     border-radius: 10px;
     overflow: hidden;
 }
-
 .store-container .article-container .article .img {
     width: 50%;
     display: flex;
@@ -310,12 +290,10 @@
     box-shadow: inset 0px 0px 1px rgb(201, 211, 212),
                 inset 0px 0px 6px rgba(47, 131, 170, 0.336);
 }
-
 .store-container .article-container .article .img img {
     width: 60px;
     height: 60px;
 }
-
 .store-container .article-container .article .label {
     width: 50%;
     height: calc(100% - 10px);
@@ -351,12 +329,10 @@
 .store-container .article-container .article .label .price-container p .def-price {
     margin-left: 5px;
 }
-
 .store-container .article-container .article .label .price-container p .total-price {
     display: block;
     text-align: center;
 }
-
 .store-container .article-container .article .amount-container {
     display: flex;
     width: 80%;
@@ -368,7 +344,6 @@
     border: 1px solid rgb(201, 211, 212);
     border-radius: 5px;
 }
-
 .store-container .article-container .article .amount-container button {
     color: white;
     font-weight: 400;
@@ -381,13 +356,11 @@
     align-items: center;
     justify-content: center;
 }
-
 .store-container .article-container .article .amount-container p {
     color: white;
     font-weight: 600;
     height: 20px;
 }
-
 .store-container .article-container .article .label .remove {
     width: 0px;
     height: 0px;
@@ -396,12 +369,12 @@
     position: absolute;
 }
 
+/* Responsive design */
 @media (max-width: 1300px) {
     .store-container .article-container {
         width: calc(800px/3*2);
     }
 }
-
 @media (max-width: 1030px) {
     .store-container .article-container {
         width: calc(800px/3);
@@ -413,7 +386,6 @@
         height: 70%;
     }
 }
-
 @media (max-height: 370px) {
     .store-container .shoppingcar-container {
         height: 60%;
