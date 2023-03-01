@@ -25,11 +25,12 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
     addArticle();
   }
+  
 
 function dragImg(index) {
+    console.log(index)
     let articleMoving = document.getElementById(index)
-    
-    console.log('Moving '+ ev.dataTransfer.setData("text", ev.target.id))
+    console.log(+ ev.dataTransfer.setData("text", ev.target.id))
     shop.appendChild(articleMoving)
     addArticle();
   }
