@@ -17,6 +17,18 @@ The´re was an extra challenge to implement a functionality to be able remove th
 I decide that the easiest way to do this was by adding a button to the articles that only was able in the shopping list.
 
 # ✅ **Functioning** ✅
-The operation is simple. Just drag the articles you want from the articles container to the shopping car. This articles have a functionality to add the amount of articles added to the shopping car that will be reflected in the final price.
+The operation is simple. Just add the amount of the article you want and drag them from the articles container to the shopping car. 
+
+![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/add-articles.gif)
+
+This articles have a functionality to add the amount of articles added to the shopping car that will be reflected in the final price.
+
+![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/total-prc.gif)
+
+You can still add the amount you want in the shoppin list.
+
+![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/add-shopping.gif)
 
 In case you want to remove the article, you can do it by using the red button that appear when the article is in the shopping car.
+
+![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/remove-articles.gif)
