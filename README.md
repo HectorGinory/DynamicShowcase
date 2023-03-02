@@ -31,4 +31,4 @@ You can still add the amount you want in the shoppin list.
 
 In case you want to remove the article, you can do it by using the red button that appear when the article is in the shopping car.
 
-![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/remove-articles.gif)
+![](https://github.com/HectorGinory/DynamicShowcase/blob/main/sources/GIF/remove-article.gif)
