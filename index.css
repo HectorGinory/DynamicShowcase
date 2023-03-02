@@ -37,7 +37,7 @@
     overflow: auto;
 }
 
-.store-container .shoppingcar-container {
+.shoppingcar-container {
     width: 300px;
     height: 80%;
     position: absolute;
@@ -55,7 +55,7 @@
     z-index: 10;
     overflow: hidden;
 }
-.store-container .handlebar-wheels {
+.handlebar-wheels {
     width: 390px;
     height: 50%;
     position: absolute;
@@ -66,7 +66,7 @@
     border-radius: 20px;
     z-index: 1;
 }
-.store-container .handlebar-wheels::after {
+.handlebar-wheels::after {
     content: '';
     width: 390px;
     height: 60px;
@@ -78,7 +78,7 @@
     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.411);
 }
 
-.store-container .shoppingcar-container .shoppinglist {
+.shoppinglist {
     width: 90%;
     height: 75%;
     background: rgba(226, 173, 123, 0.477);
@@ -90,7 +90,7 @@
     overflow: auto;
     border-radius: 5px;
 }
-.store-container .shoppingcar-container .shoppinglist .article {
+.shoppinglist .article {
     width: 100%;
     display: flex;
     min-height: 70px;
@@ -99,24 +99,24 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.253);
 }
-.store-container .shoppingcar-container .shoppinglist .article .img {
+.shoppinglist .img {
     width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.store-container .shoppingcar-container .shoppinglist .article .img img {
+.shoppinglist .img img {
     width: 60px;
     height: 60px;
 }
-.store-container .shoppingcar-container .shoppinglist .article .label {
+.shoppinglist .label {
     width: 70%;
     height: calc(100%-50px);
     display: flex;
     flex-wrap: wrap;
 }
-.store-container .shoppingcar-container .shoppinglist .article .label .name {
+.shoppinglist .name {
     font-size: 16px;
     color: white;
     font-weight: 400;
@@ -127,65 +127,7 @@
     align-items: center;
     justify-content: center;
 }
-.store-container .shoppingcar-container .shoppinglist .article .label .price-container {
-    display: inline-flex;
-    flex-direction: column;
-    width: 60%;
-    height: 50%;
-    justify-content: center;
-    margin-top: 5px;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .price-container p {
-    height: 40%;
-    font-size: 12px;
-    color: white;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .price-container p b {
-    margin-left: 10px;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .amount-container {
-    width: 50%;
-    background: rgba(54, 2, 2, 0.144);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    margin: 1% 0px 0px;
-    border-radius: 40px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.226);
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .amount-container p {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .amount-container .amount {
-    height: 100%;
-    background: transparent;
-    border: 0px solid transparent;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .amount-container button {
-    background: transparent;
-    border: 0px solid transparent;
-    color: white;
-    font-weight: 400;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .btn-remove {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    height: 50%;
-}
-.store-container .shoppingcar-container .shoppinglist .article .label .remove {
+.shoppinglist .remove {
     grid-area: 3/2;
     width: 40%;
     height: 50%;
@@ -201,7 +143,13 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
     margin-top: 2px;
 }
-.store-container .shoppingcar-container .shoppinglist .article .label .remove:hover::after {
+.shoppinglist .btn-remove {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+.shoppinglist .remove:hover::after {
     content: 'Haga click para eliminar';
     position: absolute;
     width: 120px;
@@ -214,7 +162,67 @@
     transform: translateX(90px);
     z-index: 0;
 }
-.store-container .shoppingcar-container .shoppingcar {
+.shoppinglist .price-container {
+    display: inline-flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50%;
+    justify-content: center;
+    margin-top: 5px;
+}
+.shoppinglist .price-container p {
+    height: 40%;
+    font-size: 12px;
+    color: white;
+}
+.shoppinglist .price-container .def-price {
+    margin-left: 5px;
+    color:rgb(255, 134, 134);
+}
+.shoppinglist .price-container .total-price {
+    color:rgb(4, 255, 4);
+}
+.shoppinglist .price-container p b {
+    margin-left: 10px;
+}
+.shoppinglist .amount-container {
+    width: 50%;
+    background: rgba(54, 2, 2, 0.144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    margin: 1% 0px 0px;
+    border-radius: 40px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.226);
+}
+.shoppinglist .amount-container p {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.shoppinglist .amount-container .amount {
+    height: 100%;
+    background: transparent;
+    border: 0px solid transparent;
+}
+.shoppinglist .amount-container button {
+    background: transparent;
+    border: 0px solid transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.shoppingcar {
     width: 90%;
     height: 40px;
     display: flex;
@@ -225,12 +233,12 @@
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
-.store-container .shoppingcar-container .shoppingcar p {
+.shoppingcar p {
     color: white;
     font-size: 20px;
     letter-spacing: 5px;
 }
-.store-container .shoppingcar-container .totalprc-container {
+.totalprc-container {
     width: 90%;
     height: 10%;
     border-left: 0px;
@@ -242,17 +250,16 @@
     box-shadow: inset 5px 5px 10px rgba(63, 3, 12, 0.24),
                 inset -5px -5px 10px rgba(255, 205, 113, 0.027);
 }
-.store-container .shoppingcar-container .totalprc-container p {
+.totalprc-container p {
     font-size: 22px;
     font-weight: 200;
     color: white;
 }
-.store-container .shoppingcar-container .totalprc-container .totalprc {
+.totalprc-container .totalprc {
     font-weight: 400;
     margin-left: 30px;
 }
-
-.store-container .article-container {
+.article-container {
     width: 800px;
     max-height: calc(100vh - 50px);
     min-height: calc(100vh - 50px);
@@ -268,7 +275,7 @@
     z-index: 0;
     overflow-y: auto;
 }
-.store-container .article-container .article {
+.article-container .article {
     width: 200px;
     height: 120px;
     background: linear-gradient(to top, rgba(44, 12, 2, 0.288), rgba(26, 7, 1, 0.418));
@@ -280,7 +287,7 @@
     border-radius: 10px;
     overflow: hidden;
 }
-.store-container .article-container .article .img {
+.article-container .img {
     width: 50%;
     display: flex;
     align-items: center;
@@ -290,11 +297,11 @@
     box-shadow: inset 0px 0px 1px rgb(201, 211, 212),
                 inset 0px 0px 6px rgba(47, 131, 170, 0.336);
 }
-.store-container .article-container .article .img img {
+.article-container img {
     width: 60px;
     height: 60px;
 }
-.store-container .article-container .article .label {
+.article-container .label {
     width: 50%;
     height: calc(100% - 10px);
     box-shadow: -3px -0px 0px rgb(216, 222, 223),
@@ -308,7 +315,7 @@
     gap: 2%;
     background: rgba(29, 187, 250, 0.13);
 }
-.store-container .article-container .article .label .name {
+.article-container .name {
     font-size: 15px;
     width: 100%;
     font-weight: 400;
@@ -316,7 +323,7 @@
     height: 20%;
     text-align: center;
 }
-.store-container .article-container .article .label .price-container {
+.article-container .price-container {
     width: 100%;
     height: 40%;
     display: flex;
@@ -326,14 +333,16 @@
     justify-content: center;
     color: white;
 }
-.store-container .article-container .article .label .price-container p .def-price {
+.article-container .price-container p .def-price {
     margin-left: 5px;
+    color:rgb(255, 134, 134);
 }
-.store-container .article-container .article .label .price-container p .total-price {
+.article-container .price-container p .total-price {
     display: block;
     text-align: center;
+    color:rgb(4, 255, 4);
 }
-.store-container .article-container .article .amount-container {
+.article-container .amount-container {
     display: flex;
     width: 80%;
     height: 20%;
@@ -344,7 +353,7 @@
     border: 1px solid rgb(201, 211, 212);
     border-radius: 5px;
 }
-.store-container .article-container .article .amount-container button {
+.article-container .amount-container button {
     color: white;
     font-weight: 400;
     background: transparent;
@@ -356,12 +365,12 @@
     align-items: center;
     justify-content: center;
 }
-.store-container .article-container .article .amount-container p {
+.article-container .amount-container p {
     color: white;
     font-weight: 600;
     height: 20px;
 }
-.store-container .article-container .article .label .remove {
+.article-container .remove {
     width: 0px;
     height: 0px;
     overflow: hidden;
